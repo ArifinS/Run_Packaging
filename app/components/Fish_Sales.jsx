@@ -346,14 +346,14 @@ export default function FishSalesTracker() {
                             type="date"
                             value={t.date}
                             onChange={(e) => updateTx(t.id, "date", e.target.value)}
-                            className="w-full px-1 py-0.5 border rounded text-xs focus:ring-2 focus:ring-indigo-500"
+                            className="w-full px-1 py-0.5 border text-black rounded text-xs focus:ring-2 focus:ring-indigo-500"
                           />
                         </td>
                         <td className="px-2 py-1.5">
                           <select
                             value={t.branch}
                             onChange={(e) => updateTx(t.id, "branch", e.target.value)}
-                            className="w-full px-1 py-0.5 border rounded text-xs focus:ring-2 focus:ring-indigo-500"
+                            className="w-full px-1 py-0.5 border text-black rounded text-xs focus:ring-2 focus:ring-indigo-500"
                           >
                             {BRANCHES.map((b) => (
                               <option key={b} value={b}>{b}</option>
@@ -367,14 +367,14 @@ export default function FishSalesTracker() {
                             min="0"
                             value={t.size}
                             onChange={(e) => updateTx(t.id, "size", e.target.value)}
-                            className="w-16 px-1 py-0.5 border rounded text-right text-xs focus:ring-2 focus:ring-indigo-500"
+                            className="w-16 px-1 py-0.5 border rounded text-right text-black text-xs focus:ring-2 focus:ring-indigo-500"
                           />
                         </td>
                         <td className="px-2 py-1.5">
                           <select
                             value={t.rateType}
                             onChange={(e) => updateTx(t.id, "rateType", e.target.value)}
-                            className="w-full px-1 py-0.5 border rounded text-xs focus:ring-2 focus:ring-indigo-500"
+                            className="w-full px-1 py-0.5 border text-black rounded text-xs focus:ring-2 focus:ring-indigo-500"
                           >
                             <option value="Small">Small (6)</option>
                             <option value="Big">Big (6.6)</option>
@@ -393,7 +393,7 @@ export default function FishSalesTracker() {
                               min="0"
                               value={t.transport}
                               onChange={(e) => updateTx(t.id, "transport", e.target.value)}
-                              className="w-16 px-1 py-0.5 border rounded text-right text-xs focus:ring-2 focus:ring-indigo-500"
+                              className="w-16 px-1 py-0.5 border text-black rounded text-right text-xs focus:ring-2 focus:ring-indigo-500"
                             />
                           ) : (
                             <span className="block w-16 text-center text-gray-400">—</span>
@@ -459,14 +459,14 @@ export default function FishSalesTracker() {
                       type="date"
                       value={p.date}
                       onChange={(e) => updatePay(p.id, "date", e.target.value)}
-                      className="flex-1 px-2 py-1 border rounded text-xs focus:ring-2 focus:ring-indigo-500"
+                      className="flex-1 px-2 py-1 border text-black rounded text-xs focus:ring-2 focus:ring-indigo-500"
                     />
                     <input
                       type="number"
                       min="0"
                       value={p.amount}
                       onChange={(e) => updatePay(p.id, "amount", e.target.value)}
-                      className="w-20 px-2 py-1 border rounded text-right text-xs focus:ring-2 focus:ring-indigo-500"
+                      className="w-20 px-2 py-1 border text-black rounded text-right text-xs focus:ring-2 focus:ring-indigo-500"
                     />
                     <button
                       onClick={() => deletePay(p.id)}
